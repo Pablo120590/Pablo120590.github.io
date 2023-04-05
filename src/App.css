@@ -1,38 +1,142 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.wrapper{
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+  min-height: 95vh;
+  width: 100%;
+  background-color: black;    
+}
+
+.inputForNote{
+  height: 30px;
+  width: 250px;
+  border: none;
+  border-bottom: 1px solid white;
+  background: none;
+  color: white;
+  padding: 0 10px;
+  outline: none;
+}
+
+.enterNote{
+  width: 100px;
+  height: 30px;
+  font-size: 12px;
+  background: none;
+  border: 1px solid white;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.enterNote:hover{
+  background: white;
+  color: black;
+  cursor: pointer;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.ToDoNote{
+  position:absolute;
+  cursor: move;
+  min-height: 95px;
+  max-height: 95px;
+  min-width: 180px;
+  max-width: 180px;
+  color: black;
+  padding: 1em;
+  border-radius: 7px;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  overflow: hidden;
+}
+
+.editArea{
+  position:absolute;
+  top: 20px;
+  resize: none;
+  border: none;
+  outline: none;
+  font-size: 14px;
+  min-height: 95px;
+  max-height: 95px;
+  min-width: 170px;
+  max-width: 170px;
+}
+
+.deleteNote{
+  position: absolute;
+  right: 0px;
+  top: 1px;
+  background: none;
+  border: none;
+}
+
+.deleteNote:hover{
+  cursor: pointer;
+}
+
+.editNote{
+  position: absolute;
+  right: 20px;
+  top: -1px;
+  background: none;
+  border: none;
+}
+
+.editNote:hover{
+  cursor: pointer;
+}
+
+.closeEditing{
+  position: absolute;
+  right: -3px;
+  top: 0px;
+  background: none;
+  border: none;
+}
+
+.closeEditing:hover{
+  cursor: pointer;
+}
+
+.saveEditing{
+  position: absolute;
+  right: 16px;
+  top: 0px;
+  background: none;
+  border: none;
+}
+
+.saveEditing:hover{
+  cursor: pointer;
+}
+
+.divForSearch{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: black;
+}
+
+.inputForSearch{
+  height: 30px;
+  width: 250px;
+  border: none;
+  border-bottom: 1px solid white;
+  background: none;
+  color: white;
+  padding: 0 10px;
+  outline: none;
+}
+
+.divForEditMode {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  width: 100%;
+  background-color: black; 
+}
+
+.lightText{
+  background:yellow;
 }
